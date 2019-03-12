@@ -1,27 +1,48 @@
 import 'package:flutter/material.dart';
 
-class PathPainter extends StatelessWidget {
+class BackgroundPainter extends StatelessWidget {
+  Widget child;
+
+  BackgroundPainter({this.child});
+
   @override
   Widget build(BuildContext context) {
     return CustomPaint(
-      painter: CubicPainter(),
+      painter: TopWavePainter(),
+      child: child,
     );
   }
 }
 
-class CubicPainter extends CustomPainter {
+class TopWavePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    Paint paint = Paint()
-      ..color = Colors.red
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2.0;
-    
+    Gradient gradient = LinearGradient(
+      begin: Alignment.topRight,
+      end: Alignment.bottomLeft,
+      stops: [0.01, 0.02, 0.3, 0.5, 0.7],
+      colors: [
+        Color(0xedDB354B),
+        Color(0xeeDB354B),
+        Color(0xffDB354B),
+        Color(0xffBF1F48),
+        Color(0xff950044),
+      ],
+    );
+
+    Rect rect = Rect.fromLTRB(0, 0, size.width * 0.5, size.height / 2);
+
+    Paint paint = Paint()..shader = gradient.createShader(rect);
+
     Path path = Path();
-    path.cubicTo(size.width / 4 + 10, 3 * size.height / 10 , 3 * size.width / 4, size.height / 12, size.width + 10, size.height / 3);
+    path.lineTo(0, size.height / 4);
+    path.cubicTo(size.width / 3, size.height / 4, size.width / 2.2,
+        size.height / 2, size.width, 3 * size.height / 5);
     path.lineTo(size.width, 0);
+    path.close();
+
+    canvas.drawShadow(path, Colors.black, 2.0, false);
     canvas.drawPath(path, paint);
-    canvas.drawColor(Colors.amber, BlendMode.color);
   }
 
   @override
