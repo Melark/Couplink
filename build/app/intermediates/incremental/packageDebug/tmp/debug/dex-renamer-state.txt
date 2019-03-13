@@ -1,4 +1,0 @@
-#Tue Mar 12 14:49:59 CAT 2019
-base.0=C\:\\_GIT\\Couplink\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
