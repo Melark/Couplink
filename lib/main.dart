@@ -1,5 +1,4 @@
-import 'package:couplink/src/pages/home.dart';
-import 'package:couplink/src/pages/widgets/path_painter.dart';
+import 'package:couplink/src/pages/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -12,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage()
+      home: SignUpPage()
     );
   }
 }
