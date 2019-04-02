@@ -1,10 +1,16 @@
+import 'package:couplink/src/blocs/auth/auth_bloc.dart';
 import 'package:couplink/src/pages/log_in_page.dart';
 import 'package:couplink/src/pages/widgets/path_painter.dart';
 import 'package:couplink/src/pages/widgets/shadow_icon.dart';
 import 'package:flutter/material.dart';
 
 class SignUpPage extends StatelessWidget {
-  SignUpPage();
+  final formKey = GlobalKey<FormState>();
+  AuthBloc bloc;
+
+  SignUpPage(){
+    bloc = AuthBloc();
+  }
 
   @override
   Widget build(BuildContext context) {

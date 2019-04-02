@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "413803770856",
+    "firebase_url": "https://wishifyfluttercreate.firebaseio.com",
+    "project_id": "wishifyfluttercreate",
+    "storage_bucket": "wishifyfluttercreate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413803770856:android:88b5633dd0313481",
+        "android_client_info": {
+          "package_name": "com.marrow.couplink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6NouLYUznBRDCkoRw15MPylTeqxtXEfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413803770856-tsnkelqbbs6joh4vblrp4cs2f2c6n5ns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
