@@ -13,20 +13,27 @@
           "package_name": "com.marrow.couplink"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "413803770856-tsnkelqbbs6joh4vblrp4cs2f2c6n5ns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyA6NouLYUznBRDCkoRw15MPylTeqxtXEfg"
         }
       ],
       "services": {
+        "analytics_service": {
+          "status": 1
+        },
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "413803770856-tsnkelqbbs6joh4vblrp4cs2f2c6n5ns.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
         }
       }
     }

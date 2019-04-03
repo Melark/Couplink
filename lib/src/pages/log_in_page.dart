@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
                   child: Text(
                     "Log In",
                     style: TextStyle(fontSize: 24.0, color: Colors.white),
-                  ),
+                  ), 
                 ),
                 color: Color(0xffBC1D48),
                 onPressed: () {},
